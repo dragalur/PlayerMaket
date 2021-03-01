@@ -11,6 +11,15 @@ body {
   font-size: 18px;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #547aaf;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(38, 0, 175, 0.699);
+}
+
 .wrapper {
   min-height: 100vh;
 }
