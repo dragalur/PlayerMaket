@@ -115,7 +115,7 @@ body {
 
 .features__phone {
   margin-top: 40px;
-  height: 100%;
+  height: 100vh;
 }
 
 .features__phone .phone__title {
@@ -162,7 +162,6 @@ body {
 
 .perspective {
   width: 100%;
-  float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,6 +188,115 @@ body {
 
 .opinion {
   text-align: center;
+  color: #66778e;
+  width: 100%;
+  height: 500px;
+  background: url("/Image/Photo.png") #061327 0 0/100% 100% no-repeat;
+}
+
+.opinion .opinion__text {
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.opinion .opinion__person {
+  margin: 0 auto;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opinion .opinion__person .img {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.opinion .opinion__person span {
+  color: #2e66b2;
+}
+
+.opinion .bullet {
+  margin: 0 auto;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.opinion .bullet .dot {
+  margin-left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.app {
+  text-align: center;
+  background-color: #040a14;
+  padding-top: 80px;
+}
+
+.app .app__title {
+  font-weight: 500;
+  color: #fff;
+}
+
+.app .app__texts {
+  margin: 40px auto;
+}
+
+.app .app__image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app .app__image img {
+  width: 100%;
+}
+
+.app button {
+  margin: 40px 0;
+}
+
+footer {
+  background-color: #040a14;
+  height: 100px;
+}
+
+footer .content {
+  margin: 0 auto;
+  border-top: 1px solid #153b6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__text {
+  font-weight: 500;
+}
+
+footer .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .link p {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1368px) {
@@ -222,11 +330,33 @@ body {
     padding: 5% 0 0 50px;
   }
   .perspective {
-    margin-top: 230px;
+    padding-top: 80px;
   }
   .pespective__info {
     width: 40%;
     padding: 50px 7%;
+  }
+  .opinion__text {
+    width: 60%;
+    padding-top: 170px;
+    font-size: 20px;
+  }
+  .app__title {
+    font-size: 24px;
+  }
+  .app__texts {
+    width: 60%;
+  }
+  .footer__text {
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  .content {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 30px;
   }
 }
 
@@ -255,11 +385,39 @@ body {
     padding: 5% 0 0 50px;
   }
   .perspective {
-    margin-top: 250px;
+    padding-top: 280px;
   }
   .pespective__info {
     width: 40%;
     padding: 50px 7%;
+  }
+  .opinion__text {
+    width: 60%;
+    padding-top: 170px;
+    font-size: 20px;
+  }
+  .app__title {
+    font-size: 24px;
+  }
+  .app__texts {
+    width: 60%;
+  }
+  .app__title {
+    font-size: 24px;
+  }
+  .app__texts {
+    width: 60%;
+  }
+  .footer__text {
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  .content {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 30px;
   }
 }
 
@@ -274,12 +432,15 @@ body {
     width: 30px;
     height: 30px;
   }
+  .perspective {
+    padding-top: 0;
+  }
   .pespective__info {
     width: 50%;
     padding: 50px 7%;
   }
-  .perspective {
-    margin-top: 100px;
+  .footer__text {
+    font-size: 11px;
   }
 }
 
@@ -338,13 +499,37 @@ body {
   .perspective {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 0;
+    padding-top: 350px;
   }
   .perspective .pespective__info {
     margin: 50px auto;
     padding: 0 7%;
     width: 80%;
     text-align: center;
+  }
+  .opinion__text {
+    width: 80%;
+    padding-top: 100px;
+    font-size: 17px;
+  }
+  .app__title {
+    font-size: 20px;
+  }
+  .app__texts {
+    width: 80%;
+  }
+  .footer__text {
+    font-size: 11px;
+    margin: 20px 10px 0 10px;
+  }
+  .content {
+    width: 80%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
   }
 }
 
@@ -373,6 +558,12 @@ body {
   }
   .pespective__info {
     margin: 350px auto 0;
+  }
+  .perspective {
+    padding-top: 650px;
+  }
+  .opinion__text {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
